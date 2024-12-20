@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+   
+    height: 600px;
+    width: 600px;
+    border: 1px black solid;
+    margin: 0 auto;
+    /* position: relative; */
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    /* background-color: aqua; */
+    animation-name: change;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear ease;
+    /* animation-delay: .5s; */
+    /* animation-direction: alternate; */
+}
+
+@keyframes change{
+0%{
+    background: #000;
+  margin-left: 0;
+  margin-top: 0;
+}
+25%{
+    background: yellow;
+    margin-left: 400px;
+    margin-top: 0;
+   
+}
+50%{
+    background: blue;
+    margin-top: 400px;
+margin-left: 400px;  
+}
+75%{
+    background: red;
+    margin-top: 400px;
+    margin-left:0px;
+    
+}
+100%{
+    background: green;
+    margin-top: 0;
+    margin-right: 400px;
+
+}
+}
